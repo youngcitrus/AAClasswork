@@ -1,0 +1,39 @@
+<h1> New Cat </h1>
+
+<form action="/cats" method="post">
+  <label for="name">Name:
+    <input type="text" id="name" name="cat[name]" value="<%=@cat.name%>">
+  </label>
+  <br>
+  <label for="sex">
+    <input type="radio" id="sex" name="sex" sex="cat[sex]" value="<%=@cat.sex%>">
+    Male
+    <input type="radio" id="sex" name="sex" sex="cat[sex]" value="<%=@cat.sex%>">
+    Female
+  </label>
+  <br>
+  <label for="color">Color:
+      <select id="color">
+      <option disabled="true" selected="true">--- Choose A Color ---</option>
+      <option value="<%Cat.colors[0]%>"> <%=Cat.colors[0]%> </option>
+      <option value="<%Cat.colors[1]%>"> <%=Cat.colors[1]%> </option>
+      <option value="<%Cat.colors[2]%>"> <%=Cat.colors[2]%> </option>
+      <option value="<%Cat.colors[3]%>"> <%=Cat.colors[3]%> </option>
+      <option value="<%Cat.colors[4]%>"> <%=Cat.colors[4]%> </option>
+
+      </select>
+  </label>
+
+  <br>
+  <label for="birth_date"> Birth Date:
+    <input type="date" name="cat[birth_date]" id="birth_date" value="<%=@cat.birth_date%>">
+  </label>
+
+  <br>
+  <label for="description"> Description:
+    <input type="text" name="cat[description]" id="description" value="<%=@cat.description %>">
+  </label>
+
+  <input type="submit" value="Submit Cat">
+
+</form>
