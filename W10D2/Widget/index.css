@@ -1,0 +1,53 @@
+.DogClock {
+  font-family: 'Crimson Text', serif;
+  margin: auto;
+  padding: 1px 5px 5px 5px;
+  width: 40%;
+  text-align: center;
+  background-color: rgb(87, 210, 156);;
+}
+
+.clocko {
+  border: solid 2px black;
+}
+
+.timeCont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabo{
+  background-color: rgb(152, 215, 255);
+  font-family: 'Crimson Text', serif;
+  margin: auto;
+  /* padding: 1px 5px 5px 5px; */
+  width: 40%;
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-evenly; */
+}
+
+.tabCont {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+.tabCont h1 {
+  border: 2px black solid;
+  padding: 5px 5px 5px 0px;
+  border-radius: 20% 20% 5% 5%;
+  cursor: pointer;
+  margin-bottom: -22px;
+
+}
+
+.tabCont h1:hover {
+  background-color: rgb(123, 171, 201);
+}
+
+.tabo h2 {
+   border: 2px black solid;
+   padding: 100px 0px 0px 10px ;
+}

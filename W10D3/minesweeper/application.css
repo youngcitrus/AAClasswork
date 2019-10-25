@@ -1,0 +1,52 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+.tile {
+  width: 20px;
+  height: 20px;
+}
+
+.unexplored{
+  border-style: inset;
+}
+
+
+.explored {
+  border-style: outset;
+  text-align: center;
+}
+
+.flagged {
+  text-align: center;
+  border-style: outset;
+  color: red;
+
+}
+
+.bombed {
+
+  background-color: red;
+  text-align: center;
+  border-style: outset;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.modal {
+  color: white;
+  /* position: fixed; */
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
